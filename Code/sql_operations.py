@@ -253,24 +253,3 @@ def remove_weather_logs(cursor, db, user_id, id):
     except Error as e:
         print(f"Error deleting data from the database: {e}")
         db.rollback()
-
-
-###################################### MANUAL TESTING #################################
-# db = connect_to_db()
-# if db:
-#     cursor = db.cursor()
-#     user_id="Daksh"
-#     c=get_api_usage(cursor,db,user_id)
-#     print(type(c))
-#     print(authenticate_security_phrase(cursor,user_id,"okGoogle"))
-#     # print(user_id_exists(cursor,"Street00001"))
-#     # remove_weather_logs(cursor,db,user_id,1)
-#     # get_weather_logs(cursor,user_id)
-#     # get_user_info(cursor,"STREET001")
-#     # add_user_info(cursor,db,"STREET001","Daksh","9510836469","pass","okGoogle")
-    
-#     # location="Warangal"
-#     # temperature, humidity, weather_conditions, wind_speed=getData("Warangal")
-#     # add_weather_log(cursor,db,user_id, location, temperature, humidity, weather_conditions, wind_speed)
-#     cursor.close()  # Close the cursor
-#     db.close()
