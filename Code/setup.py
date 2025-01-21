@@ -53,9 +53,9 @@ def connect_to_db():
     try:
         connection = mysql.connector.connect(
             host="localhost",
-            user="sss_assignment_sep24",
-            password="doitnow",
-            database="python_app_assignment"
+            user="weather_cli",
+            password="password",
+            database="python_app_cli"
         )
         if connection.is_connected():
             print("Successfully connected to the database")
