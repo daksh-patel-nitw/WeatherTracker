@@ -27,7 +27,6 @@
         </li>
         <li>Create a new user and grant privileges:
             <pre><code>
-
 CREATE USER 'weather_cli'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON python_app_cli.* TO 'weather_cli'@'localhost';
 FLUSH PRIVILEGES;
