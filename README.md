@@ -25,11 +25,11 @@
         <li>Create a new database:
             <pre><code>CREATE DATABASE python_app_cli;</code></pre>
         </li>
-        <li>Create a new user and grant privileges, Replace the <b>&lt;foldername&gt;</b> to "Folder Name" in which you have downloaded the code:
+        <li>Create a new user and grant privileges:
             <pre><code>
 
 CREATE USER 'weather_cli'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON <folder_name> TO 'weather_cli'@'localhost';
+GRANT ALL PRIVILEGES ON python_app_cli.* TO 'weather_cli'@'localhost';
 FLUSH PRIVILEGES;
 </code></pre>
 
